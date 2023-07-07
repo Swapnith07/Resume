@@ -1,0 +1,569 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+}
+p{
+    color: white;
+}
+h1,h2,h3{
+    color: #fff;
+}
+
+  
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10px;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    font-size: larger;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    border-bottom-color: white;
+}
+.lr{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.headertext{
+    margin-top: 50px;
+    flex-basis: 40%;
+}
+
+.headertext p {
+    margin-top: 10%;
+    font-size: 30px;
+    color: white;
+  }
+.headertext h1 {
+    font-size: 55px;
+    margin-top: 20px;
+    color: white;
+  }
+  .headertext h1 span{
+    color:#ff004f
+  }
+  .damon{
+    float: right;
+    margin-top: 60px;
+    margin-right: 10%;
+  }
+  .damon img {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .damon img:hover {
+    border-color: #ff004f;
+  }
+  
+
+
+
+
+#about{
+    padding: 80px 0px;
+    color: cadetblue;
+  }
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-left{
+    flex-basis: 35%;
+}
+.about-left img{
+    width: 65%;
+    border-radius: 2px;
+    margin-left: 70px;
+    box-shadow: #e8dbdb;
+    
+}
+.about-right{
+    flex-basis: 60%;
+}
+.about-right p{
+    font-size: 26px;
+}
+.info{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(248, 243, 243);
+}
+.about-img{
+    width: 100px;
+    height: 700px;
+}
+
+.hobinfo{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+.hobach{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.hobach > div {
+    background-color: #262626;
+    padding: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: transform 0.5s;
+  }
+.hobach div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.hobach div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+
+
+
+.edinfo{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+.myeduc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .myeduc > div {
+    background-color: #262626;
+    padding: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: transform 0.5s;
+  }
+
+  .myeduc div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+.myeduc div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+
+
+
+.skill{
+       width:1100px;
+       padding:100px 0px;
+
+}
+
+.skinfo{
+    margin: 0px;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.left{
+    width:65%;
+}
+.left h1{
+    text-align: left;
+    font-size: 110px;
+    font-weight: 300;
+    text-align: left;
+    font-size: 30px;
+}
+.left p{
+    font-size: 18px;
+    margin: 5px 0px;
+}
+.left h1 span{
+    color: #ff004f;
+}
+ 
+  
+
+.right{
+    width: 100%;
+    flex: 1;
+    margin-left: 200px;
+}
+.right .line{
+    margin-bottom: 15px;
+}
+.right .info{
+    display: flex;
+    justify-content: space-between;
+}
+.right .info span{
+    font-weight: 500px;
+    font-size: 20px;
+    position: relative;
+}
+.right .bars{
+    background-color: #ababab;
+    height: 5px;
+    width: 300%;
+    position: relative;
+}
+.right .bars::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color: #ff004f;
+}
+.right .c::before{
+    width: 75%;
+}
+.right .py::before{
+    width: 65%;
+}
+.right .html::before{
+    width: 90%;
+}
+.right .js::before{
+    width: 50%;
+}
+.right .fl::before{
+    width: 40%;
+}
+.right .ml::before{
+    width: 50%;
+}
+.right .gg::before{
+    width: 65%;
+}
+.right .hs::before{
+    width: 90%;
+}
+
+
+  
+.con-left{
+    flex-basis: 35% ;
+}
+.con-right{
+    flex-basis: 60%;
+}
+.con-left p{
+    margin-top: 30px;
+    font-size: larger;
+}
+.con-left p i{
+    color: #ff004f;
+}
+.socialicons{
+    margin-top: 30px;
+}
+.socialicons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.socialicons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.con-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background:#262626;
+    padding: 15px;
+    margin: 15px;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.sub{
+    display: inline-block;
+    background-color: #ff004f;
+    padding:14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+    
+    .logo {
+      width: 100px;
+    }
+  
+    nav ul li {
+      margin: 10px 10px;
+      font-size: 16px;
+    }
+  
+    .headertext {
+      margin-top: 30px;
+      flex-basis: 100%;
+      text-align: center;
+    }
+  
+    .headertext p {
+      margin-top: 5%;
+      font-size: 24px;
+    }
+  
+    .headertext h1 {
+      font-size: 40px;
+      margin-top: 10px;
+    }
+  
+    .damon {
+      float: none;
+      margin-top: 30px;
+      margin-right: 0;
+      text-align: center;
+    }
+  
+    .damon img {
+      height: 300px;
+      width: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    nav ul li {
+      margin: 10px 5px;
+      font-size: 14px;
+    }
+  
+    .headertext p {
+      margin-top: 2%;
+      font-size: 20px;
+    }
+  
+    .headertext h1 {
+      font-size: 32px;
+      margin-top: 5px;
+    }
+  
+    .damon img {
+      height: 200px;
+      width: 200px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about-left {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .about-left img {
+      margin-left: 0;
+    }
+  
+    .about-right {
+      flex-basis: 100%;
+    }
+    
+    .info {
+      font-size: 30px;
+    }
+    
+    .about-img {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-right p {
+      font-size: 22px;
+    }
+    
+    .info {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .myeduc {
+      grid-template-columns: 1fr;
+    }
+  
+    .myeduc > div {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .edinfo {
+      font-size: 30px;
+    }
+  
+    .myeduc div {
+      padding: 30px;
+    }
+  
+    .myeduc div h2 {
+      font-size: 24px;
+    }
+  }
+
+  
+@media (max-width: 768px) {
+    .skill {
+      width: 100%;
+      padding: 50px 20px;
+    }
+  
+    .left {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  
+    .right {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skinfo {
+      font-size: 30px;
+    }
+  
+    .left h1 {
+      font-size: 80px;
+    }
+  
+    .left p {
+      font-size: 16px;
+    }
+  
+    .right .info span {
+      font-size: 16px;
+    }
+  
+    .right .bars {
+      width: 200%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .con-left {
+      flex-basis: 100%;
+    }
+  
+    .con-right {
+      flex-basis: 100%;
+    }
+  
+    .con-left p {
+      font-size: 16px;
+    }
+  
+    .socialicons {
+      margin-top: 20px;
+    }
+  
+    .socialicons a {
+      font-size: 24px;
+    }
+  
+    form input,
+    form textarea {
+      font-size: 16px;
+    }
+  
+    .sub {
+      padding: 12px 40px;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .con-left p {
+      font-size: 14px;
+    }
+  
+    .socialicons a {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  
+    form input,
+    form textarea {
+      font-size: 14px;
+      padding: 10px;
+      margin: 10px;
+    }
+  
+    .sub {
+      padding: 10px 30px;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+  }
+
+
+
+
